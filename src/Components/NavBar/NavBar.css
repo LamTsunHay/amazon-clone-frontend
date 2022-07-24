@@ -15,7 +15,7 @@
 
 .navbar_locator {
   display: flex;
-  margin: 20px 0px;
+  margin: 20px 25px;
 }
 
 .navbar_locatorImage {
@@ -27,6 +27,7 @@
 
 .navbar_location {
   color: white;
+  font-size: 14px;
   font-weight: bold;
   margin-left: 5px;
 }
@@ -103,4 +104,18 @@
   left: -23px;
   top: -3px;
   color: #f08805;
+}
+
+.navbar_footer {
+  width: 100vw;
+  height: 30px;
+  background-color: #22303e;
+  color: white;
+  display: flex;
+}
+
+.navbar_footer_text {
+  font-size: 14px;
+  margin: 5px 10px;
+  font-weight: bold;
 }

@@ -42,7 +42,18 @@ const NavBar = () => {
           <div className="navbar_text_cart">Cart</div>
         </div>
       </div>
-      <div className="navbar_footer"></div>
+      <div className="navbar_footer">
+        <div className="navbar_footer_text">Best Seller</div>
+        <div className="navbar_footer_text">Mobile</div>
+        <div className="navbar_footer_text">Amazon Pay</div>
+        <div className="navbar_footer_text">Fashion</div>
+        <div className="navbar_footer_text">Electronics</div>
+        <div className="navbar_footer_text">Price</div>
+        <div className="navbar_footer_text">New Realease</div>
+        <div className="navbar_footer_text">Customer Service</div>
+        <div className="navbar_footer_text">Computers</div>
+        <div className="navbar_footer_text">Home & Kitchen</div>
+      </div>
     </div>
   );
 };
