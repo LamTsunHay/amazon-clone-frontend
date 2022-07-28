@@ -2,11 +2,12 @@ import React from "react";
 import "./PlaceOrder.css";
 import Grid from "@mui/material/Grid";
 import Rating from "@mui/material/Rating";
+import Paper from "@mui/material/Paper";
 
 const PlaceOrder = (props) => {
   return (
     <Grid container>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <img
           className="placeorder_image"
           src="https://ik.imagekit.io/amazonclone123/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65__B6qTQl9mia.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1658420308113"
@@ -44,7 +45,10 @@ const PlaceOrder = (props) => {
         </div>
       </Grid>
       <Grid item xs={3}>
-        Order
+        <Paper variant="outlined" className="placeorder_order">
+          <button className="placeorder_button addtocart">Add to Cart</button>
+          <button className="placeorder_button buynow">Buy Now</button>
+        </Paper>
       </Grid>
     </Grid>
   );
