@@ -1,0 +1,5 @@
+.order_container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    overflow: auto;
+}

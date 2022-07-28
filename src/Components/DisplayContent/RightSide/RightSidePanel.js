@@ -37,13 +37,13 @@ const RightSidePanel = (props) => {
       },
     ];
     setListOfProduct(list);
-  });
+  }, []);
 
   return (
     <div className="RightSide_main">
       <div className="RightSide_result_text">RESULTS</div>
       {listOfProduct.map((product) => (
-        <Product definition={product} />
+        <Product key={product.name} definition={product} />
       ))}
     </div>
   );
