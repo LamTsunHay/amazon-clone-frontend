@@ -1,5 +1,17 @@
-.order_container {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    overflow: auto;
+.placeorder_image {
+  height: 500px;
+  margin: 100px 150px;
+}
+
+.placeorder_description {
+  margin-top: 50px;
+}
+
+.textgap {
+  margin: 10px;
+}
+
+.pricetag {
+  font-size: 24px;
+  color: #b12704;
 }
