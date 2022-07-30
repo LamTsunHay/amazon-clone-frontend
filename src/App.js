@@ -4,7 +4,7 @@ import MainPage from "./Components/HomePage/MainPage";
 import DisplayContent from "./Components/DisplayContent/DisplayContent";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import Checkout from "./Components/Checkout/Checkout";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

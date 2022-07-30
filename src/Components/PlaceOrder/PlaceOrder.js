@@ -3,13 +3,7 @@ import "./PlaceOrder.css";
 import Grid from "@mui/material/Grid";
 import Rating from "@mui/material/Rating";
 import Paper from "@mui/material/Paper";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const PlaceOrder = (props) => {

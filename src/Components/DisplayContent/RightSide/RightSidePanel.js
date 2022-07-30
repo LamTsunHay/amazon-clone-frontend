@@ -1,7 +1,7 @@
 import Product from "./Product";
 import "./RightSide.css";
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const RightSidePanel = (props) => {
   const [listOfProduct, setListOfProduct] = useState([]);
