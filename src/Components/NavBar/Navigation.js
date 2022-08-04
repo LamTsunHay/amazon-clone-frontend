@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const { size } = useContext(CartContext);
   return (
     <div>
       <div className="navbar_component">
-        <div className="navbar_logo"></div>
+        <Link to="">
+          <div className="navbar_logo"></div>
+        </Link>
         <div className="navbar_locator">
           <div className="navbar_locatorImage"></div>
           <div className="navbar_location"> Hong Kong</div>
