@@ -14,20 +14,16 @@ const CheckoutItems = (props) => {
         }}
       >
         <div style={{ margin: "25px" }}>
-          <img
-            height="200px"
-            src="https://ik.imagekit.io/amazonclone123/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65__B6qTQl9mia.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1658420308113"
-            alt=""
-          />
+          <img height="200px" src={props.definition.image} alt="" />
         </div>
         <div style={{ marginTop: "20px" }}>
           <div className="textgap" style={{ fontSize: "20px" }}>
-            New Apple iPhone 11 (64GB) - Green
+            {props.definition.name}
           </div>
           <div className="textgap" style={{ fontWeight: "bold" }}>
-            5,999
+            {props.definition.price}
           </div>
-          <div className="textgap">In Stock</div>
+          <div className="textgap">{props.definition.status}</div>
         </div>
       </div>
     </div>

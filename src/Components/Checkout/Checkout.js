@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Checkout.css";
 import Grid from "@mui/material/Grid";
 import CheckoutItems from "./CheckoutItems";
+import { CartContext } from "../CartContext";
 
 const Checkout = (props) => {
+  const { items, size } = useContext(CartContext);
+
+  const cartValue = () => {
+    let price = 0;
+    for (let i = 0; i < items.length; i++) {
+      let num = items[i].price.replace(",", "");
+      price += parseInt(num);
+    }
+    return price;
+  };
   return (
     <div className="checkout_body">
       <Grid container>
@@ -19,10 +30,9 @@ const Checkout = (props) => {
               Shopping Cart
             </div>
             <div>
-              <CheckoutItems />
-              <CheckoutItems />
-              <CheckoutItems />
-              <CheckoutItems />
+              {items.map((item) => (
+                <CheckoutItems definition={item} />
+              ))}
             </div>
           </div>
         </Grid>
@@ -37,7 +47,7 @@ const Checkout = (props) => {
             }}
           >
             <div style={{ fontSize: "26px" }}>
-              Subtotal (2 items): <b>1,111,000</b>
+              Subtotal ({size} items): <b>{cartValue()}</b>
             </div>
             <div style={{ paddingTop: "25px" }}>
               <button className="placeholder_button">Process to Buy</button>

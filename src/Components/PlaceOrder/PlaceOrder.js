@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./PlaceOrder.css";
 import Grid from "@mui/material/Grid";
 import Rating from "@mui/material/Rating";
 import Paper from "@mui/material/Paper";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { CartContext } from "../CartContext";
 
 const PlaceOrder = (props) => {
+  const { items, size, increment } = useContext(CartContext);
   const [productDetails, setProductDetails] = useState([]);
+
+  const addToCart = () => {
+    increment(productDetails);
+  };
+
   let { id } = useParams();
+
   useEffect(() => {
     let list = [
       {
@@ -60,7 +68,6 @@ const PlaceOrder = (props) => {
         return item;
       }
     });
-    console.log(item[0]);
     setProductDetails(item[0]);
   }, []);
 
@@ -103,10 +110,12 @@ const PlaceOrder = (props) => {
       </Grid>
       <Grid item xs={3}>
         <Paper variant="outlined" className="placeorder_order">
+          <button className="placeorder_button addtocart" onClick={addToCart}>
+            Add to Cart
+          </button>
           <Link to="/checkout">
-            <button className="placeorder_button addtocart">Add to Cart</button>
+            <button className="placeorder_button buynow">Buy Now</button>
           </Link>
-          <button className="placeorder_button buynow">Buy Now</button>
         </Paper>
       </Grid>
     </Grid>

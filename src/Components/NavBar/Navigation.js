@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../CartContext";
 import "./NavBar.css";
 
 const NavBar = () => {
+  const { size } = useContext(CartContext);
   return (
     <div>
       <div className="navbar_component">
@@ -38,7 +40,7 @@ const NavBar = () => {
         </div>
         <div className="navbar_text navbar_cart">
           <div className="cart_image"></div>
-          <div className="cart_item">0</div>
+          <div className="cart_item">{size}</div>
           <div className="navbar_text_cart">Cart</div>
         </div>
       </div>
