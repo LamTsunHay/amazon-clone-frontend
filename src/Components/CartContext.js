@@ -7,7 +7,8 @@ const CartContextProvider = (props) => {
   //   localStorage.getItem("myCart") != undefined
   //     ? JSON.parse(localStorage.getItem("myCart"))
   //     : [];
-  const [items, setItems] = useState(existingCart);
+  // const [items, setItems] = useState(existingCart);
+  const [items, setItems] = useState([]);
   const [size, setSize] = useState(items.length);
 
   const increment = (item) => {

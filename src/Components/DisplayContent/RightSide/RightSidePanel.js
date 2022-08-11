@@ -8,7 +8,8 @@ const RightSidePanel = (props) => {
 
   useEffect(() => {
     fetch("http://localhost:8080/amazon/products/getAllProducts")
-    .then((response) => setListOfProduct(response))
+    .then((response) => response.json())
+    .then((productList) => setListOfProduct(productList))
     // let list = [
     //   {
     //     id: "123",

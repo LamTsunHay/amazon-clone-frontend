@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { CartContext } from "../CartContext";
 
 const PlaceOrder = (props) => {
-  const { items, size, increment } = useContext(CartContext);
+  const { increment } = useContext(CartContext);
   const [productDetails, setProductDetails] = useState([]);
 
   const addToCart = () => {
