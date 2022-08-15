@@ -14,7 +14,7 @@ const CheckoutItems = (props) => {
         }}
       >
         <div style={{ margin: "25px" }}>
-          <img height="200px" src={props.definition.image} alt="" />
+          <img height="200px" src={props.definition.imageURL} alt="" />
         </div>
         <div style={{ marginTop: "20px" }}>
           <div className="textgap" style={{ fontSize: "20px" }}>

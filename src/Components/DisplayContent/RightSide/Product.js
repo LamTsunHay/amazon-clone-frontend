@@ -6,14 +6,14 @@ const Product = (props) => {
   return (
     <div className="product">
       <div className="product_container">
-        <img className="product_image" src={props.definition.image} alt="" />
+        <img className="product_image" src={props.definition.imageURL} alt="" />
       </div>
       <div className="product_description">
         <div className="product_name">{props.definition.name}</div>
         <div className="product_rating">
           <Rating
             name="read-only"
-            value={4}
+            value={props.definition.stars}
             style={{ fontSize: "20px" }}
             readOnly
           />
@@ -22,6 +22,9 @@ const Product = (props) => {
         <div>
           <span className="price_symbol">HKD</span>
           <span className="product_price">{props.definition.price}</span>
+        </div>
+        <div>
+          <b>FREE Shipping</b> to Hong Kong
         </div>
       </div>
     </div>
