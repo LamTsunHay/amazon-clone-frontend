@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Checkout.css";
 import Grid from "@mui/material/Grid";
 import CheckoutItems from "./CheckoutItems";
@@ -6,7 +6,6 @@ import { CartContext } from "../CartContext";
 
 const Checkout = (props) => {
   const { items, size } = useContext(CartContext);
-  console.log(items);
   const cartValue = () => {
     let price = 0;
 
