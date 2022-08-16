@@ -41,11 +41,13 @@ const NavBar = () => {
           <div style={{ fontSize: "14px" }}>Returns</div>
           <div style={{ fontWeight: "bold" }}>& Order</div>
         </div>
-        <div className="navbar_text navbar_cart">
-          <div className="cart_image"></div>
-          <div className="cart_item">{size}</div>
-          <div className="navbar_text_cart">Cart</div>
-        </div>
+        <Link to="/checkout">
+          <div className="navbar_text navbar_cart">
+            <div className="cart_image"></div>
+            <div className="cart_item">{size}</div>
+            <div className="navbar_text_cart">Cart</div>
+          </div>
+        </Link>
       </div>
       <div className="navbar_footer">
         <div className="navbar_footer_text">Best Seller</div>

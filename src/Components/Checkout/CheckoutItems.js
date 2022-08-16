@@ -1,7 +1,13 @@
 import React from "react";
 import "./Checkout.css";
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
 
 const CheckoutItems = (props) => {
+  const { decrement } = useContext(CartContext);
+  const removeCart = () => {
+    decrement(props.definition);
+  };
   return (
     <div>
       <div
@@ -20,11 +26,16 @@ const CheckoutItems = (props) => {
           <div className="textgap" style={{ fontSize: "20px" }}>
             {props.definition.name}
           </div>
-          <div className="textgap" style={{ fontWeight: "bold" }}>
-            {props.definition.price}
+          <div className="commandBar textgap">
+            <div className="delButton" onClick={removeCart}>
+              Delete
+            </div>
+            <div className="col"></div>
+            <div className="delButton">Save for later</div>
+            <div className="col"></div>
           </div>
-          <div className="textgap">{props.definition.status}</div>
         </div>
+        <div className="textgap left-padding">${props.definition.price}</div>
       </div>
     </div>
   );

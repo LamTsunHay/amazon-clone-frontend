@@ -22,3 +22,27 @@
   color: black;
   background-color: #ffd712;
 }
+
+.left-padding {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.delButton {
+  font-size: 12px;
+}
+
+.commandBar {
+  display: flex;
+  margin-top: 15px;
+}
+
+.col {
+  background-color: #dddddd;
+  width: 1px;
+  height: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

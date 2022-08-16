@@ -20,7 +20,9 @@ const PlaceOrder = (props) => {
   useEffect(() => {
     fetch("http://localhost:8082/amazon/products/search/" + id)
       .then((response) => response.json())
-      .then((item) => setProductDetails(item));
+      .then((item) => {
+        setProductDetails(item);
+      });
   }, []);
 
   return (
@@ -42,12 +44,11 @@ const PlaceOrder = (props) => {
           <div>
             <Rating
               name="read-only"
-              value={3}
+              value="4.3"
               readOnly
               style={{ fontSize: "20px" }}
             />
-            {productDetails.rating} rating | {productDetails.review}+ answered
-            questions
+            {productDetails.rating} rating | 1000+ answered questions
           </div>
           <hr />
           <div>
