@@ -1,10 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../CartContext";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
+import { createSearchParams, Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const { size } = useContext(CartContext);
+  const navigate = useNavigate();
+  const [searchKeyword, setSearchKeyword] = useState("");
+
+  const searchProducts = () => {
+    if (searchKeyword === "") {
+      navigate("");
+    } else {
+      const params = { keyword: searchKeyword };
+      navigate({
+        pathname: "/display",
+        search: `?${createSearchParams(params)}`,
+      });
+    }
+  };
   return (
     <div>
       <div className="navbar_component">
@@ -27,9 +41,15 @@ const NavBar = () => {
             </select>
           </div>
           <div>
-            <input type="text" className="navbar_searchbox" />
+            <input
+              type="text"
+              onChange={(e) => {
+                setSearchKeyword(e.target.value);
+              }}
+              className="navbar_searchbox"
+            />
           </div>
-          <div className="navbar_seachboxdiv">
+          <div className="navbar_seachboxdiv" onClick={searchProducts}>
             <div className="navbar_searchicon"></div>
           </div>
         </div>
