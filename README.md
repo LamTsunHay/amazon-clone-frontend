@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Amazon Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cloned the complete Amazon application using React framework and Spring Boot Java framework. Starting from the Home page, product display page, product detail page as well cart & checkout page.  
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Built front-end application using React framework and integrated with CSS and HTML. Implemented backend api service with Spring Boot Java framework. Built CRUD service for product display and shopping cart implementations. Used MongoDB and MySQL to store product metadata and shopping cart products. Learnt to build a full stack e-commerce project from this project in my final year programming bachelor degree.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Pull the backend from repo [Amazon Clone Backend](https://github.com/LamTsunHay/amazon-clone-backend)  
+* npm 8.11.0
 
-### `npm test`
+### Executing program
+* Open back-end folder 
+* Run UsermetaData, Productdataservice and AddToCart
+* Open front-end folder 
+* Excecute following command
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Demo
 
-### `npm run build`
+### Home Page
+![image](https://user-images.githubusercontent.com/84372565/190903181-07988db3-272a-4f3f-a35b-db7fab52bd3b.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Product Display Page
+https://user-images.githubusercontent.com/84372565/190912953-f202d9b1-da48-48bf-9ebc-fab67a6393df.mp4
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Product Detail Page
+![image](https://user-images.githubusercontent.com/84372565/190913038-2a9dcb85-5930-469c-b39c-a514eaab6f09.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Add Products to Cart and Checkout
+https://user-images.githubusercontent.com/84372565/190913300-c0fca88b-50d3-4ea3-acd8-66bf11521532.mp4
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Authors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributors names and contact info
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Lam Tsun Hay 
+* Linkedin: [https://www.linkedin.com/in/tsunhay-lam/](https://www.linkedin.com/in/tsunhay-lam/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under Lam Tsun Hay License 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Inspiration
+* [Amazon-clone Tutorial](https://www.youtube.com/watch?v=397AZniLo04&t=9s)
+* [React](https://reactjs.org/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [MongoDB](https://www.mongodb.com/)
+* [MySQL](https://www.mysql.com/)
